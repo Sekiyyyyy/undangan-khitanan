@@ -7,7 +7,7 @@
 
 const CONFIG = {
   childName: 'Kintanan',
-  musicSrc:  'backsound.mp3',
+  musicSrc:  'audio/backsound.mp3',
 };
 
 /* ── COVER STARS ── */
