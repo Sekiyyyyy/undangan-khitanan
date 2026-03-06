@@ -58,20 +58,20 @@
 
 
 <!-- ═══════════════════════════════════════
-     NAVBAR
+    NAVBAR
 ════════════════════════════════════════ -->
 <nav id="siteNav">
   <a href="#hero" class="nav-brand">Khitanan</a>
   <ul class="nav-links">
     <li><a href="#pembuka">Pembuka</a></li>
-    <li><a href="#keluarga">Keluarga</a></li>`
+    <li><a href="#keluarga">Keluarga</a></li>
     <li><a href="#lokasi">Lokasi</a></li>
   </ul>
 </nav>
 
 
 <!-- ═══════════════════════════════════════
-     MAIN CONTENT
+    MAIN CONTENT
 ════════════════════════════════════════ -->
 <div id="main-content">
 
@@ -207,6 +207,70 @@
     </div>
   </section>
 
+  <!-- ── RSVP ── -->
+  <section class="rsvp-section" id="ucapan">
+    <div class="container">
+
+      <!-- Judul -->
+      <p class="rsvp-label">
+        <i class="fas fa-star me-2"></i>Ucapan &amp; Doa<i class="fas fa-star ms-2"></i>
+      </p>
+      <h2 class="rsvp-title">Sampaikan <em>Doamu</em></h2>
+      <div class="rsvp-divider">
+        <span class="rsvp-line"></span>
+        <i class="fas fa-hands-praying"></i>
+        <span class="rsvp-line"></span>
+      </div>
+
+      <!-- Form -->
+      <div class="rsvp-form-card">
+        <h4 class="rsvp-form-heading">
+          <i class="fas fa-pen-nib me-2"></i>Tulis Ucapan
+        </h4>
+
+        <div class="rsvp-field">
+          <label for="rsvpNama"><i class="fas fa-user me-1"></i> Nama</label>
+          <input type="text" id="rsvpNama" placeholder="Nama Anda..."/>
+        </div>
+
+        <div class="rsvp-field">
+          <label for="rsvpHadir"><i class="fas fa-calendar-check me-1"></i> Kehadiran</label>
+          <select id="rsvpHadir">
+            <option value="">— Pilih —</option>
+            <option value="Hadir">✅ Insya Allah Hadir</option>
+            <option value="Tidak Hadir">❌ Tidak Dapat Hadir</option>
+            <option value="Masih Ragu">🤔 Masih Belum Pasti</option>
+          </select>
+        </div>
+
+        <div class="rsvp-field">
+          <label for="rsvpPesan"><i class="fas fa-comment-dots me-1"></i> Ucapan &amp; Doa</label>
+          <textarea id="rsvpPesan" placeholder="Tuliskan ucapan dan doa..."></textarea>
+        </div>
+
+        <button id="rsvpSubmitBtn" onclick="rsvpKirim()">
+          <i class="fas fa-paper-plane me-2"></i>Kirim Ucapan
+        </button>
+
+        <p id="rsvpStatus" class="rsvp-status"></p>
+      </div>
+
+      <!-- Daftar Ucapan -->
+      <div class="rsvp-list-wrap">
+        <div class="rsvp-list-header">
+          <span id="rsvpCount" class="rsvp-count">
+            <i class="fas fa-spinner fa-spin me-1"></i> Memuat...
+          </span>
+          <button class="rsvp-refresh" onclick="rsvpMuat()" title="Refresh">
+            <i class="fas fa-arrows-rotate"></i>
+          </button>
+        </div>
+        <div id="rsvpList"></div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ── FOOTER ── -->
   <footer class="footer-section" id="penutup">
     <div class="bg-dots"></div>
@@ -255,6 +319,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <!-- Custom JS -->
 <script src="script.js"></script>
+<script src="rsvp.js"></script>
 
 </body>
 </html>
