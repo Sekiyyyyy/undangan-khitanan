@@ -173,7 +173,7 @@ body {
 
 .cover-name {
   font-family: 'Pacifico', cursive;
-  font-size: clamp(3.2rem, 12vw, 5.5rem);
+  font-size: clamp(2.5rem, 12vw, 3.5rem);
   color: #FFFFFF;
   line-height: 1.1;
   margin: 12px 0;
@@ -379,7 +379,7 @@ section { padding: 80px 0; }
 
 .hero-name {
   font-family: 'Pacifico', cursive;
-  font-size: clamp(4rem, 15vw, 8rem);
+  font-size: clamp(4rem, 15vw, 4rem);
   color: var(--white);
   line-height: 1;
   margin: 10px 0 20px;
