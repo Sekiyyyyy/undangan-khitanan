@@ -1,8 +1,3 @@
-/* ============================================
-   UNDANGAN KHITANAN KINTANAN
-   script.js
-   ============================================ */
-
 'use strict';
 
 const CONFIG = {

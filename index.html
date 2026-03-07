@@ -49,6 +49,7 @@
       <span class="line right"></span>
     </div>
 
+    <div class="cover-guest-wrap" id="coverGuestWrap"></div>
     <button class="btn-buka" onclick="openInvitation()">
       <i class="fas fa-envelope-open"></i>
       Buka Undangan
@@ -228,9 +229,22 @@
           <i class="fas fa-pen-nib me-2"></i>Tulis Ucapan
         </h4>
 
-        <div class="rsvp-field">
+        <!-- INPUT NAMA: tampil hanya jika TIDAK ada ?to= di URL -->
+        <div class="rsvp-field" id="rsvpNamaField">
           <label for="rsvpNama"><i class="fas fa-user me-1"></i> Nama</label>
           <input type="text" id="rsvpNama" placeholder="Nama Anda..."/>
+        </div>
+
+        <!-- BANNER TAMU: tampil hanya jika ADA ?to= di URL -->
+        <div class="rsvp-guest-banner" id="rsvpGuestBanner">
+          <div class="rsvp-guest-avatar">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="rsvp-guest-info">
+            <span class="rsvp-guest-label">Tamu Undangan</span>
+            <span class="rsvp-guest-name" id="rsvpGuestName">—</span>
+          </div>
+          <i class="fas fa-circle-check rsvp-guest-check"></i>
         </div>
 
         <div class="rsvp-field">
@@ -267,7 +281,6 @@
         </div>
         <div id="rsvpList"></div>
       </div>
-
     </div>
   </section>
 
@@ -319,6 +332,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <!-- Custom JS -->
 <script src="script.js"></script>
+<!-- <script src="tamu.js"></script> -->
 <script src="rsvp.js"></script>
 
 </body>
