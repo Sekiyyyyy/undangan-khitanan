@@ -914,8 +914,7 @@ section { padding: 80px 0; }
 }
 
 /* ══════════════════════════════════════════
-   rsvp.css — versi lengkap dengan fitur tamu
-   (replace file rsvp.css lama sepenuhnya)
+  RSVP
 ══════════════════════════════════════════ */
 
 /* ── Section wrapper ── */
@@ -1203,7 +1202,7 @@ section { padding: 80px 0; }
 
 
 /* ══════════════════════════════════════════
-   TAMBAHAN BARU — Fitur Sapa Tamu
+  TFitur Sapa Tamu
 ══════════════════════════════════════════ */
 
 /* Banner tamu di dalam form RSVP */
@@ -1283,4 +1282,52 @@ section { padding: 80px 0; }
   font-style: italic;
   color: var(--gold-light, #F0CC7A);
   line-height: 1.2;
+}
+
+
+/* ══════════════════════════════════════════
+  PAGINATION
+══════════════════════════════════════════ */
+
+.rsvp-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.rsvp-page-btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid rgba(26, 107, 90, 0.25);
+  color: var(--rsvp-primary);
+  font-family: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rsvp-page-btn:hover:not(.disabled):not(.active) {
+  background: rgba(26, 107, 90, 0.08);
+  border-color: var(--rsvp-primary);
+}
+
+.rsvp-page-btn.active {
+  background: var(--rsvp-primary);
+  border-color: var(--rsvp-primary);
+  color: #fff;
+  font-weight: 600;
+  cursor: default;
+}
+
+.rsvp-page-btn.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
