@@ -1,5 +1,5 @@
     /* ══════════════════════════════════════════════════
-    rsvp.js — dengan fitur Pagination (6 per halaman)
+    rsvp.js — dengan fitur Pagination (5 per halaman)
     ══════════════════════════════════════════════════ */
 
     var RSVP_URL = 'https://script.google.com/macros/s/AKfycbz1etWEif1mF6q6k3w1nGpHVvQD-bztZxnlTvkxXi324U0D7-bMiAhp6yMY5h2IBmwn/exec';
@@ -210,3 +210,4 @@
     rsvpMuat();
 
     });
+
