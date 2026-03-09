@@ -4,7 +4,7 @@
 
     var RSVP_URL = 'https://script.google.com/macros/s/AKfycbz1etWEif1mF6q6k3w1nGpHVvQD-bztZxnlTvkxXi324U0D7-bMiAhp6yMY5h2IBmwn/exec';
 
-    var PER_PAGE    = 6;    /* jumlah ucapan per halaman */
+    var PER_PAGE    = 5;    /* jumlah ucapan per halaman */
     var rsvpAllRows = [];   /* simpan semua data dari Sheets */
     var rsvpPage    = 1;    /* halaman aktif saat ini */
 
@@ -208,4 +208,5 @@
     initCoverGuest();
     initRsvpGuest();
     rsvpMuat();
+
     });
